@@ -71,18 +71,20 @@
             // 
             // Clear
             // 
+            Clear.BackColor = Color.Blue;
             Clear.Location = new Point(303, 259);
             Clear.Name = "Clear";
             Clear.Size = new Size(94, 29);
             Clear.TabIndex = 4;
             Clear.Text = "Clear";
-            Clear.UseVisualStyleBackColor = true;
+            Clear.UseVisualStyleBackColor = false;
             Clear.Click += Clear_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Azure;
             ClientSize = new Size(800, 450);
             Controls.Add(Clear);
             Controls.Add(C_to_F);

@@ -29,7 +29,7 @@ namespace Tempreture_app
 
         private void C_to_F_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(celsius.Text))
+            if (string.IsNullOrEmpty(celsius.Text))
             {
                 celsius.Text = "0";
             }
@@ -45,7 +45,7 @@ namespace Tempreture_app
         {
             celsius.Clear();
             fahrenheit.Clear();
-   
+
         }
     }
 }
