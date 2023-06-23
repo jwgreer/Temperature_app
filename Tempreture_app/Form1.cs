@@ -13,6 +13,7 @@ namespace Tempreture_app
 
 
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(fahrenheit.Text))
@@ -45,6 +46,21 @@ namespace Tempreture_app
         {
             celsius.Clear();
             fahrenheit.Clear();
+
+        }
+
+        private void K_to_F_button_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(fahrenheit.Text))
+            {
+                fahrenheit.Text = "0";
+            }
+
+            input_fahrenheit = float.Parse(fahrenheit.Text);
+
+            input_celsius = (input_fahrenheit - 32) * 5.0f / 9.0f + 273;
+
+            celsius.Text = input_celsius.ToString();
 
         }
     }
