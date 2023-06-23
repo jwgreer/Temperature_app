@@ -33,18 +33,19 @@
             F_to_C = new Button();
             C_to_F = new Button();
             Clear = new Button();
+            K_to_F_button = new Button();
             SuspendLayout();
             // 
             // celsius
             // 
-            celsius.Location = new Point(128, 131);
+            celsius.Location = new Point(455, 131);
             celsius.Name = "celsius";
             celsius.Size = new Size(125, 27);
             celsius.TabIndex = 0;
             // 
             // fahrenheit
             // 
-            fahrenheit.Location = new Point(453, 131);
+            fahrenheit.Location = new Point(135, 131);
             fahrenheit.Name = "fahrenheit";
             fahrenheit.Size = new Size(125, 27);
             fahrenheit.TabIndex = 1;
@@ -72,7 +73,7 @@
             // Clear
             // 
             Clear.BackColor = Color.Blue;
-            Clear.Location = new Point(303, 259);
+            Clear.Location = new Point(303, 284);
             Clear.Name = "Clear";
             Clear.Size = new Size(94, 29);
             Clear.TabIndex = 4;
@@ -80,12 +81,23 @@
             Clear.UseVisualStyleBackColor = false;
             Clear.Click += Clear_Click;
             // 
+            // K_to_F_button
+            // 
+            K_to_F_button.Location = new Point(303, 237);
+            K_to_F_button.Name = "K_to_F_button";
+            K_to_F_button.Size = new Size(94, 29);
+            K_to_F_button.TabIndex = 5;
+            K_to_F_button.Text = "F to K ->";
+            K_to_F_button.UseVisualStyleBackColor = true;
+            K_to_F_button.Click += K_to_F_button_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(800, 450);
+            Controls.Add(K_to_F_button);
             Controls.Add(Clear);
             Controls.Add(C_to_F);
             Controls.Add(F_to_C);
@@ -104,5 +116,6 @@
         private Button F_to_C;
         private Button C_to_F;
         private Button Clear;
+        private Button K_to_F_button;
     }
 }
